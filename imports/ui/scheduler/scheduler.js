@@ -7,6 +7,7 @@ import './scheduler.html';
 import {Events} from '../../api/events.js';
 
 show_minical = function(){
+
     if (scheduler.isCalendarVisible()){
         scheduler.destroyCalendar();
     } else {

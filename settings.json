@@ -1,0 +1,7 @@
+{
+    "galaxy.meteor.com": {
+       "env": {
+         "MONGO_URL": "mongodb://bigjoga:nikola1994@ds219051.mlab.com:19051/schedulerdb"
+       }
+     }
+  }
