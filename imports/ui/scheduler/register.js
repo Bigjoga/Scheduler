@@ -10,7 +10,7 @@ Template.register.events({
 			email: emailVar,
 			password: passwordVar
 		});
-
+        alert("Your account has been created!");
         console.log("Form submitted.");
     }
 });
