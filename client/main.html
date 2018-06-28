@@ -4,7 +4,19 @@
 
 <body>
   <h1 align="center" style="color: royalblue">Welcome to Scheduler</h1>
-  <a href="/imports/ui/scheduler/register.html">Create acc</a>
-  {{> scheduler}}
+  <br/>
+  {{#if currentUser}}
+    {{> dashboard}}
+  {{else}}
+  <p style="border-style: solid; border-color: royalblue;">
+      <br/>
+      <p>If you already have account, just log in: {{> login}}</p>
+      <br/>
+      <br/>
+      <br/>
+      <p>But if you don't have account, please create one: {{> register}}</p>
+      <br/>
+  </p>
+  {{/if}}
   <h3 align="right" style="color: royalblue">Modified by Nikola Gajic</h3>
 </body>
