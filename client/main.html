@@ -3,20 +3,25 @@
 </head>
 
 <body>
-  <h1 align="center" style="color: royalblue">Welcome to Scheduler</h1>
-  <br/>
+<h1 align="center" style="color: royalblue">Welcome to Scheduler</h1>
   {{#if currentUser}}
     {{> dashboard}}
   {{else}}
-  <p style="border-style: solid; border-color: royalblue;">
-      <br/>
-      <p>If you already have account, just log in: {{> login}}</p>
-      <br/>
-      <br/>
-      <br/>
-      <p>But if you don't have account, please create one: {{> register}}</p>
-      <br/>
-  </p>
+
+  <br>
+
+      <div class="form">
+        
+          {{> login}}
+          <p>Not registered? Create an account down.</p>
+
+          <br>
+          <br>
+
+          {{> register}}
+          <p>Already registered? Sign In up.</p>
+        
+      </div>
+    
   {{/if}}
-  <h3 align="right" style="color: royalblue">Modified by Nikola Gajic</h3>
 </body>

@@ -6,3 +6,7 @@ import '../imports/ui/scheduler/login.js'
 import '../imports/ui/scheduler/register.js'
 import '../imports/ui/scheduler/dashboard.js'
 import './main.html';
+
+$('.message a').click(function(){
+    $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+ });
